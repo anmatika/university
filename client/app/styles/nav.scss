@@ -1,8 +1,9 @@
+@import 'settings';
 nav {
 	border-bottom: 5px solid black !important;
 }
 .navbar-inverse {
-	background-color: #FFEEF1;
+	background-color: $navbarColor;
 
 	a#logout {
 		cursor: pointer;
@@ -44,4 +45,10 @@ nav {
 			}
 		}
 	}
+}
+
+.logo-img {
+	position: absolute;
+	left: 0;
+	top: 15px;
 }

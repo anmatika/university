@@ -1,19 +1,11 @@
 #aboutme {
 	
 	@media (max-width: 1080px) { 
-		#pic-me { display: none; }
+		
 	}
 
 	@media (min-width: 1081px) { 
-		#pic-me {
-			background-image: url('../images/me_orig.jpg');
-			height: 535px;
-			width: auto;
-		}
-
-		#pic-me:hover {
-			background-image: url('../images/me2.jpg');
-		}
+	
 	}
 
 	.jumbotron {

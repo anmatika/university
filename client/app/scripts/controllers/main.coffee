@@ -1,4 +1,4 @@
-angular.module('portfolioApp').controller 'MainCtrl', ($scope, $timeout, dataSvc) ->
+angular.module('portfolioApp').controller 'MainCtrl', ($scope, $timeout, $location, dataSvc) ->
 
   clearActive = (question) ->
     
@@ -98,40 +98,8 @@ angular.module('portfolioApp').controller 'MainCtrl', ($scope, $timeout, dataSvc
     q.active
 
   $scope.submit = (questions) ->
-    $scope.results = [
-      { 
-          text: "Apply for a residence permit/Visit the police
-                Instructions..
-                Required documents.."
-               
-      },
-      { 
-          text: "Visit the In to Finland Service Point: tax card and KELA
-                Instructions..
-                Required documents..
-                "
-               
-      }
-      { 
-          text: "Visit the Local Register Office
-                Instructions..
-                Required documents..
-                "
-               
-      }
-      { 
-          text: "Open a bank account
-                Instructions..
-                Required documents..
-                "
-      }
-      { 
-          text: "Other
-                Instructions..
-                "
-      }
-        
-    ]
+    $location.path('results')
+
     return
 
   return

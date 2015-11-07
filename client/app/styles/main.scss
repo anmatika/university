@@ -1,3 +1,4 @@
+@import 'settings';
 @font-face { font-family: Code_Pro_Light_Demo; src: url('../fonts/Code_Pro_Light_Demo.otf'); } 
 @font-face { font-family: Ubuntu-R; src: url('../fonts/Ubuntu-R.ttf'); } 
 @font-face { font-family: Headline; src: url('../fonts/HEADOH__.TTF'); } 
@@ -50,8 +51,7 @@ body {
 }
 
 .active { background-color: #FFEEF1 !important; color: black !important; }
-.btn {
-	margin-right: 5px;
-}
-.container {padding-top: 25px; }
-.well { background-color: #FFEEF1 !important; }
+
+.container { padding-top: 45px; }
+.well { background-color: #FFF !important; }
+.row {margin-bottom: 50px;}
