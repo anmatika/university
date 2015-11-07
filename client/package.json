@@ -2,7 +2,8 @@
   "name": "portfolio",
   "version": "0.0.0-3",
   "dependencies": {
-    "hover.css": "^2.0.2"
+    "hover.css": "^2.0.2",
+    "lodash": "^3.10.1"
   },
   "devDependencies": {
     "grunt": "^0.4.1",
@@ -33,6 +34,7 @@
     "karma-jasmine": "^0.2.3",
     "karma-phantomjs-launcher": "^0.1.4",
     "load-grunt-tasks": "^0.4.0",
+    "lodash": "^3.10.1",
     "protractor": "^1.5.0",
     "time-grunt": "^0.3.1"
   },

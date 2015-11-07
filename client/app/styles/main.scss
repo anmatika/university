@@ -49,4 +49,9 @@ body {
   opacity:1;
 }
 
-.active { background-color: pink !important; }
+.active { background-color: #FFEEF1 !important; color: black !important; }
+.btn {
+	margin-right: 5px;
+}
+.container {padding-top: 25px; }
+.well { background-color: #FFEEF1 !important; }
