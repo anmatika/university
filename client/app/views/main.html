@@ -1,46 +1,37 @@
 <div id="main" class="container">
     <fieldset>
         <div class="row">
-            <h1 id="title"></h1>
-        </div>
-        <div class="row">
             <div class="col-sm-12">
                 <h4>Relocation fast track</h2>
             </div>
         </div>
-        <div class="row" ng-repeat="q in questions">
-            <div class="col-sm-3">
-                <label>{{ q.label }}</label>
-            </div>
-
-           <div class="col-sm-9">
-               <div class="btn-group btn-group-lg">
-                    <button class="btn" 
-                   ng-repeat="b in q.buttons" 
-                   ng-click="setActive(b, q)" 
-                   ng-class="[{ 'active' : isActive(b) }, b.style]" 
-                   >
-                   {{ b.text }}</button>
-               </div>
-           </div>
+        <div class="well">
+            <div class="row" ng-repeat="q in questions">
+                <div class="col-sm-3">
+                    <label>{{ q.label }}</label>
+                </div>
             
+               <div class="col-sm-9">
+                   <div class="btn-group btn-group-lg">
+                        <button class="btn" 
+                       ng-repeat="b in q.buttons" 
+                       ng-click="setActive(b, q)" 
+                       ng-class="[{ 'active' : isActive(b) }, b.style]" 
+                       >
+                       {{ b.text }}</button>
+                   </div>
+               </div>
+                
+            </div>
         </div>
-        <br>
-        <br>
         <div class="row">
-            <div class="col-sm-offset-10">
-                <button class="btn-lg btn-warning" ng-click="submit(questions)">Submit</button>
+            <div class="col-sm-offset-11">
+                <button class="btn-lg btn-success" ng-click="submit(questions)">Submit</button>
             </div>
         </div>
         
         <br>
         <br>
-        <div class="row" ng-if="results">
-            <div class="col-sm-12 well">
-                <ol>
-                    <li ng-repeat="r in results" >{{ r.text }}</li>
-                <ol>
-            </div>
-        </div>
+        
     </fieldset>
 </div>
